@@ -271,11 +271,12 @@ ul {
 .main-content {
     background-color: #e2e8f0;
     display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template: auto 1fr / 3fr 1fr;
+    padding: 24px;
+    gap: 24px;
 }
 
 .projects {
-    margin: 24px;
     grid-row: span 2;
 }
 
@@ -320,10 +321,6 @@ ul {
     height: 20px;
 }
 
-.announcements {
-    margin: 24px 24px 0 0;
-}
-
 .announce-container {
     background-color: white;
     border-radius: 8px;
@@ -350,4 +347,36 @@ ul {
 
 .trend-container {
     background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    display: grid;
+    row-gap: 20px;
+}
+
+.trend-user {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 20px;
+    font-size: 0.8rem;
+}
+
+.trend-container img {
+    height: 50px;
+    grid-row: span 2;
+}
+
+.trend-user .user-handle {
+    align-self: end;
+}
+
+.trend-user .trend-proj {
+    align-self: start;
+    color: #636363;
+}
+
+.card,
+.announce-container,
+.trend-container {
+    box-shadow: 4px 6px 6px -3px rgba(0, 0, 0, 0.2);
 }
