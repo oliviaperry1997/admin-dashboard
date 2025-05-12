@@ -320,8 +320,32 @@ ul {
     height: 20px;
 }
 
+.announcements {
+    margin: 24px 24px 0 0;
+}
+
 .announce-container {
     background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.announce {
+    padding: 10px;
+}
+
+.announce:not(:last-of-type) {
+    border-bottom: 1px solid #d2d2d2;
+}
+
+.announce h3 {
+    font-size: 0.8rem;
+}
+
+.announce p {
+    font-size: 0.7rem;
+    color: #636363;
+    line-height: 0.8rem;
 }
 
 .trend-container {
